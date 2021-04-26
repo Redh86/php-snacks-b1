@@ -11,8 +11,12 @@
     $name = $_GET["name"];
     $mail = $_GET["mail"];
     $age = $_GET["age"];
+
+    $data = $_GET;
+
+    var_dump($data);
     
-    if ($name > 3 && is_numeric($age) && strstr($mail, '@')) {
+    if (strlen($name) > 3 && is_numeric($age) && strstr($mail, '@')) {
         echo "Accesso Consentito";
     } else {
         echo "Accesso Negato";
