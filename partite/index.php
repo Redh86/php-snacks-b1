@@ -13,8 +13,8 @@
     $homeScores = [98, 106, 123, 90];
     $guestScore = [99, 102, 130, 113];
     
-    for ($i = 0; $i < 4; $i++) {
-        $match = $homeTeam[$i]." - ".$guestTeam[$i]." | ".$homeScores[$i]." - ".$guestScore[$i];
+    for ($i = 0; $i < count($homeTeam); $i++) {
+        $match = "<h1>".$homeTeam[$i]." - ".$guestTeam[$i]." | ".$homeScores[$i]." - ".$guestScore[$i]."</h1>";
         echo ($match);
     };
 
